@@ -34,6 +34,9 @@
 -keepclasseswithmembers enum **,** {*;}
 -keepclasseswithmembernames,includedescriptorclasses class * {*;}
 
+-keep class com.sun.jna.** { *; }
+-keep class * implements com.sun.jna.** { *; }
+
 # try fixing issues with skia native stuff
 #-keepclasseswithmembers class org.jetbrains.**
 #-keepclasseswithmembers class androidx.compose.**
