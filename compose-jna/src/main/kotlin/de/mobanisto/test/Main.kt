@@ -23,6 +23,7 @@ class Main {
 
         val native = NativeClass()
         println("pid: ${native.processId}")
+        val processId = native.processId
 
         singleWindowApplication(title = "Test") {
             val (value, setValue) = remember { mutableStateOf("input") }
@@ -30,7 +31,7 @@ class Main {
                 verticalArrangement = Arrangement.spacedBy(8.dp),
                 modifier = Modifier.padding(16.dp)
             ) {
-                Text("Test")
+                Text("Test (process id = $processId)")
                 TextField(value, setValue)
                 TextButton({ setValue("") }) {
                     Text("Clear")
