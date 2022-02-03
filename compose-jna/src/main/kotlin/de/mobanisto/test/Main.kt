@@ -21,6 +21,9 @@ class Main {
     fun run() {
         println("Test")
 
+        val native = NativeClass()
+        println("pid: ${native.processId}")
+
         singleWindowApplication(title = "Test") {
             val (value, setValue) = remember { mutableStateOf("input") }
             Column(

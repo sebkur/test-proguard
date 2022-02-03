@@ -10,3 +10,6 @@
 }
 -keep class org.jetbrains.skia.** { *; }
 -keep class org.jetbrains.skiko.** { *; }
+
+-keep class com.sun.jna.** { *; }
+-keep class * implements com.sun.jna.** { *; }
