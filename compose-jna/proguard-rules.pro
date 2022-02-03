@@ -1,8 +1,6 @@
 -dontoptimize
 -dontobfuscate
 
--dontwarn org.jetbrains.skiko.**
--dontwarn org.jetbrains.skia.**
 -dontwarn kotlinx.**
 
 -keepclasseswithmembers public class de.mobanisto.test.MainKt {
