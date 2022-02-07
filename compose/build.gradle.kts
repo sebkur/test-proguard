@@ -42,7 +42,6 @@ allprojects {
 dependencies {
     implementation(compose.desktop.currentOs)
     implementation(compose.materialIconsExtended)
-    implementation("net.java.dev.jna:jna:5.10.0")
 }
 
 tasks.withType<KotlinCompile> {
